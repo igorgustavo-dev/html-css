@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando pseudo-class e pseudo-element</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(165, 42, 144);
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: brown;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: aqua;
+        }
+
+        .geral{
+            background-color: rgb(205, 228, 204);
+        }
+        .geral::before {
+            content:'☞ ';
+        }
+
+        .geral::after {
+            content:' ☜';
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste na prática</h1>
+    <ul>
+        <li><a href="https://store.steampowered.com/" target="_blank" class="geral">Steam</a></li>
+        <li><a href="https://www.gog.com/en/" target="_blank" class="geral">GOG</a></li>
+        <li><a href="https://store.epicgames.com/pt-BR" target="_blank" class="geral">EPIC</a></li>
+    </ul>
+</body>
+</html>
