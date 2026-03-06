@@ -1,60 +1,62 @@
 @charset "UTF-8";
 
-      * { margin: 0px; padding: 0px; }
+* { margin: 0px; padding: 0px; }
 
-        header {
-            background-color: black;
-            text-align: center;
-            padding: 40px
-        }
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
 
-        header > h1 {
-            font-family: 'Passion One', Arial, Helvetica, sans-serif;
-            font-size: 4.5em;
-            color: white;
-            
-        }
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
 
-        header > p {
-            color: white;
-        }
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+}
 
-        section {
-            font-family: 'Sriracha';
-            text-decoration: none;
-            color: black;
-            white-space: pre-line;
-            font-size: 2.0em;
-        }
+header > p {
+    padding-bottom: 50px;
+}
 
-        main > div > p {
-            font-family: 'Sriracha';
-            text-decoration: none;
-            color: black;
-            white-space: pre-line;
-            font-size: 2.0em;
-            /* height: 100vh;
-            background: yellow url(imagens/background001.jpg) center center no-repeat fixed;
-            background-size: cover; */
-            
-        
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
 
-       
-        
-        
-        div.para4 {
-            color: white;
-            background: black url(imagens/background001.jpg) center center no-repeat fixed;
-            background-size: cover;
-        }
+section.normal {
+    background-color: white;
+    color: black;
+}
 
-        a {
-            text-decoration: none;
-            color: white;
-        }
+section.imagem {
+    background-color: rgb(77, 77, 77);
+    color: white;
+}
 
-        a:hover {   
-            color: rgb(202, 40, 40);
-            text-decoration: underline
-        }
-    }
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.158);
+    width: 400px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
