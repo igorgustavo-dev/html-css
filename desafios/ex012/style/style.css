@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+      * { margin: 0px; padding: 0px; }
+
+        header {
+            background-color: black;
+            text-align: center;
+            padding: 40px
+        }
+
+        header > h1 {
+            font-family: 'Passion One', Arial, Helvetica, sans-serif;
+            font-size: 4.5em;
+            color: white;
+            
+        }
+
+        header > p {
+            color: white;
+        }
+
+        section {
+            font-family: 'Sriracha';
+            text-decoration: none;
+            color: black;
+            white-space: pre-line;
+            font-size: 2.0em;
+        }
+
+        main > div > p {
+            font-family: 'Sriracha';
+            text-decoration: none;
+            color: black;
+            white-space: pre-line;
+            font-size: 2.0em;
+            /* height: 100vh;
+            background: yellow url(imagens/background001.jpg) center center no-repeat fixed;
+            background-size: cover; */
+            
+        
+
+       
+        
+        
+        div.para4 {
+            color: white;
+            background: black url(imagens/background001.jpg) center center no-repeat fixed;
+            background-size: cover;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {   
+            color: rgb(202, 40, 40);
+            text-decoration: underline
+        }
+    }
