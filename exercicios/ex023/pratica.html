@@ -22,22 +22,41 @@
         
         img {
             width: 60px;
-            height: 60px;
+        }
+
+        thead > tr > th {
+            padding: 10px;
+        }
+
+        td, th {
+            border: 2px solid black;
+            padding: 10px
+        }
+
+        td.ano {
+            font-weight: bold;
+            color: green
         }
     </style>
 </head>
 <body>
     <h1>Times Brasileiros</h1>
     <table>
+        <thead>
+            <tr>
+                <th scope="col">Times</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Ano</th>
+            </tr>
+        </thead>
         <tbody>
             <tr>
                 <td> <img src="times/corinthians.png" alt=""> Corinthians</td>
                 <td>São Paulo</td>
-                <td>1910</td>
+                <td class="ano">1910</td>
             </tr>
             <tr>
-                <td> <img src="times/flamengo.png" alt=""> 
-                    CR Flamengo</td>
+                <td> <img src="times/flamengo.png" alt="">CR Flamengo</td>
                 <td>Rio de Janeiro</td>
                 <td class="ano">1895</td>
             </tr>
@@ -62,8 +81,7 @@
                 <td class="ano">1902</td>
             </tr>
             <tr>
-                <td> <img src="times/bahia.png" alt="">
-                    EC Bahia</td>
+                <td> <img src="times/bahia.png" alt="">EC Bahia</td>
                 <td>Salvador</td>
                 <td class="ano">1931</td>
             </tr>
